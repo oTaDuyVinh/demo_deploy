@@ -5,7 +5,7 @@ require_relative "deploy/syns_env"
 lock "~> 3.11.0"
 
 set :application, "demo_deploy"
-set :repo_url, "git@github.com:oBuiVanQuynh/demo_deploy.git"
+set :repo_url, "git@github.com:oTaDuyVinh/demo_deploy.git"
 set :assets_roles, [:app]
 set :deploy_ref, ENV["DEPLOY_REF"]
 set :deploy_ref_type, ENV["DEPLOY_REF_TYPE"]
@@ -22,7 +22,7 @@ set :rbenv_ruby, "#{ENV['RB_VERSION']}"
 
 set :deploy_to, "/usr/local/rails_apps/#{fetch :application}"
 
-set :deployer, ENV["DEPLOYER"] || "ec2-user"
+set :deployer, ENV["DEPLOYER"] || "ubuntu"
 
 platform = ENV["PLATFORM"] || "aws"
 

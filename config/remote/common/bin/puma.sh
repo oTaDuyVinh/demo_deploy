@@ -4,4 +4,4 @@
 APP_ROOT=/usr/local/rails_apps/demo_deploy/current
 source ~/.bashrc
 cd $APP_ROOT
-/home/ec2-user/.rbenv/shims/puma -C $APP_ROOT/config/puma.rb
+/home/ubuntu/.rbenv/shims/puma -C $APP_ROOT/config/puma.rb

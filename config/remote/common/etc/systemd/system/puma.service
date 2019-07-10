@@ -6,7 +6,7 @@ WorkingDirectory = /usr/local/rails_apps/demo_deploy/current
 ExecStart = /usr/local/rails_apps/demo_deploy/current/config/remote/common/bin/puma.sh
 Restart = always
 Type = simple
-User=ec2-user
+User=ubuntu
 TimeoutSec=15
 
 [Install]

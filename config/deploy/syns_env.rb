@@ -22,7 +22,7 @@ def update_env
 end
 
 def upload_env
-  local_dotenv_path = "/home/ec2-user/demo_deploy/config/application.yml"
+  local_dotenv_path = "/home/ubuntu/demo_deploy/config/application.yml"
 
   s3 = Aws::S3::Resource.new region: ENV["AWS_REGION"]
   bucket = s3.bucket ENV["S3_BUCKET_NAME"]
